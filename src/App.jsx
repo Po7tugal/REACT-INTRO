@@ -27,6 +27,8 @@ function App() {
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
+          <br />
+          new Count is {count}
         </button>
       </section>
 
