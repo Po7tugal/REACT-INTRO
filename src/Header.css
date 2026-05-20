@@ -1,0 +1,28 @@
+logo {
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+logo img{
+    width: 100%;
+    max-width: 150px;
+}
+
+nav {
+    float: right;
+    width: 65%;
+    text-align: right;
+}
+
+nav a {
+    color: #ae00ff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #ff00e6;
+    font-weight: bold;
+    text-decoration: underline;
+}

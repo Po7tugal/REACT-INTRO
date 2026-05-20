@@ -1,12 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import "./Header.css"
 import heroImg from './assets/hero.png'
-import './App.css'
 
 function Header() {
   return (
-    
+    <div>
+      <logo><img src={heroImg} alt="Hero Vite"></img></logo>
+      <nav>
+        <a href="/home">HOME</a>
+        <a href="/contactos">CONTACTOS</a>
+      </nav>
+      <div className="clear"></div>
+    </div>
   )
 }
 
