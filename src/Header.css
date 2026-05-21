@@ -19,10 +19,15 @@ nav a {
     color: #ae00ff;
     text-decoration: none;
     padding: 10px;
+    transition: all 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
 }
 
 nav a:hover {
-    color: #ff00e6;
+    color: #ff00e696;
     font-weight: bold;
     text-decoration: underline;
+    background-color: white;
+    border-radius: 3px;
 }
