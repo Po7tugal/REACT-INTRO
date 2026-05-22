@@ -38,8 +38,8 @@ function App() {
       <h1 className="text-center">Alertas</h1>
 
       <Alerta tipo= "success" texto="Esse é um alerta de sucesso!"/>
-      <Alerta tipo= "warning" texto="Esse é um alerta de sucesso!"/>
-      <Alerta tipo= "danger" texto="Esse é um alerta de sucesso!"/>
+      <Alerta tipo= "warning" texto="Esse é um alerta de aviso!"/>
+      <Alerta tipo= "danger" texto="Esse é um alerta de problema!"/>
       
       <h1 className="text-center">Formulario</h1>
 

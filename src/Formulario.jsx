@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 function Formulario() {
     // Estado único "formData" guarda todos os campos do formulário num objeto
     const [formData, setFormData] = useState({
