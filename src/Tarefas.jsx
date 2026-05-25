@@ -17,7 +17,7 @@ function Tarefas() {
     // Esta função é chamada quando o formulário é submetido
     function handleSubmit(e) {
         e.preventDefault(); // impede o recarregamento da página
-        setDadosSubmetidos(formData); // guarda os dados preenchidos
+        //setDadosSubmetidos(formData); // guarda os dados preenchidos
 
         const novaTarefa = {
             id: Date.now(), // gera um ID único com base no timestamp
@@ -44,6 +44,14 @@ function Tarefas() {
     function limparFormulario() {
         setFormData({ id: '', titulo: '', data: '', descricao: '' });
         setDadosSubmetidos(null);
+    }
+
+    function eliminaTarefa(id) {
+        setTarefas(tarefas.filter((tarefa) => tarefa.id !== id));
+    }
+
+    function eliminaLista() {
+        setTarefas([])
     }
 
     return (
@@ -74,7 +82,7 @@ function Tarefas() {
                     {/* Botões de ação */}
                     <button className="btn btn-success mr-2">Enviar</button>
 
-                    <button type="button" className="btn btn-outline-secondary"
+                    <button type="button" className="btn btn-outline-secondary mr-2"
 
                         onClick={limparFormulario}>Limpar</button>
 
@@ -102,9 +110,18 @@ function Tarefas() {
                             <p><strong>Titulo:</strong> {tarefa.titulo}</p>
                             <p><strong>Data:</strong> {tarefa.data}</p>
                             <p><strong>Descrição:</strong> {tarefa.descricao}</p>
+                            <button type="button" className="btn btn-outline-danger mt-2" onClick={() => eliminaTarefa(tarefa.id)}>
+                                Eliminar
+                            </button>
                         </li>
+                        
                     ))}
                 </ul>
+                {tarefas.length > 0 && (
+                    <button type="button" className="btn btn-outline-secondary mt-2" onClick={() => eliminaLista()}>
+                        Limpar Lista
+                    </button>
+                )}
             </div>
 
         </div>
