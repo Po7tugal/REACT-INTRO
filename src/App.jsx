@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="container mt-4">
-      {/* Evento onClick em React usa camelCase e chama uma função *
+      {/* Evento onClick em React usa camelCase e chama uma função */}
       <h1 className="text-center text-primary">Olá React!</h1>
       <p className="lead text-center">
         Este é o teu primeiro componente React.
@@ -49,8 +49,6 @@ function App() {
       <h1 className="text-center">Tarefas</h1>
 
       <Tarefas />
-
-      */}
       
       <h1 className="text-center">Notas</h1>
 
